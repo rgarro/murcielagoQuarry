@@ -8,40 +8,35 @@ ModelImporter:
     100004: backLeftRim_001
     100006: backLeftRim_002
     100008: Cab
-    100010: Camera
-    100012: Chassis
-    100014: frontAxle
-    100016: Lamp
-    100018: leftBackTire
-    100020: leftTopTire
-    100022: LIEBHERR538
-    100024: //RootNode
-    100026: loaderBucket
-    100028: LoaderLiftArm
-    100030: rearAxle
-    100032: rightBackTire
-    100034: rightLeftRim
-    100036: rightTopTire
+    100010: Chassis
+    100012: frontAxle
+    100014: leftBackTire
+    100016: leftTopTire
+    100018: //RootNode
+    100020: loaderBucket
+    100022: LoaderLiftArm
+    100024: rearAxle
+    100026: rightBackTire
+    100028: rightLeftRim
+    100030: rightTopTire
+    100032: LIEBHERR538
     400000: BackHood
     400002: backLeftRim
     400004: backLeftRim_001
     400006: backLeftRim_002
     400008: Cab
-    400010: Camera
-    400012: Chassis
-    400014: frontAxle
-    400016: Lamp
-    400018: leftBackTire
-    400020: leftTopTire
-    400022: LIEBHERR538
-    400024: //RootNode
-    400026: loaderBucket
-    400028: LoaderLiftArm
-    400030: rearAxle
-    400032: rightBackTire
-    400034: rightLeftRim
-    400036: rightTopTire
-    2000000: Camera
+    400010: Chassis
+    400012: frontAxle
+    400014: leftBackTire
+    400016: leftTopTire
+    400018: //RootNode
+    400020: loaderBucket
+    400022: LoaderLiftArm
+    400024: rearAxle
+    400026: rightBackTire
+    400028: rightLeftRim
+    400030: rightTopTire
+    400032: LIEBHERR538
     2100000: whitheCab
     2100002: liebherrOrange
     2100004: darkGrey
@@ -92,7 +87,6 @@ ModelImporter:
     4300024: backLeftRim
     4300026: LoaderLiftArm
     4300028: loaderBucket
-    10800000: Lamp
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -112,7 +106,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    importConstraints: 1
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -136,7 +130,7 @@ ModelImporter:
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
-    keepQuads: 1
+    keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 1
     indexFormat: 0
