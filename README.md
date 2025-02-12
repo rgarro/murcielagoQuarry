@@ -1,10 +1,13 @@
 murcielagoQuarry
 =======
 
-A Quarry Drivable Rock Loader Scene in Unity3D vehicle controller ...
+Quarry Scene with Drivable Rock Loader  ...
+
+Project in Progress
+
+Looking for Sponsors.
 
 Unity3d Play Sketch1: https://play.unity.com/mg/other/murcielago-quarry-sketch1
 
-LIBEREN A MELIDA Y HERNAN SOLIS !!!
 
-[![que no se resistieran, por que sino los mataban ... ](https://raw.githubusercontent.com/rgarro/murcielagoQuarry/master/murcielagoquarry.png)]
+[![DJ Shadow Dark Days ... ](https://raw.githubusercontent.com/rgarro/murcielagoQuarry/master/murcielagoquarry.png)]

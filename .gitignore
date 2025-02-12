@@ -8,7 +8,7 @@
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
-
+Assets/Scripts/customLibs
 # Visual Studio cache directory
 .vs/
 
