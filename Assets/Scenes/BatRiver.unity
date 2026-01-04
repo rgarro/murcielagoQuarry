@@ -288,6 +288,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b3367caf1a5740b1bc80e4da0af167a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leftFrontWheel: {fileID: 228088133}
+  rightFrontWheel: {fileID: 0}
+  leftCenterWheel: {fileID: 0}
+  rightCenterWheel: {fileID: 0}
+  leftRearWheel: {fileID: 0}
+  rightRearWheel: {fileID: 0}
+--- !u!1 &228088133 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100044, guid: 75f084e0f070e48f09d391892fae8161,
+    type: 3}
+  m_PrefabInstance: {fileID: 228088130}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &325991546
 PrefabInstance:
   m_ObjectHideFlags: 0
