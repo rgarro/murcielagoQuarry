@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 170076735}
   - component: {fileID: 170076734}
   m_Layer: 0
-  m_Name: BobSuns
+  m_Name: TheFreakingSun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -289,14 +289,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftFrontWheel: {fileID: 228088133}
-  rightFrontWheel: {fileID: 0}
-  leftCenterWheel: {fileID: 0}
-  rightCenterWheel: {fileID: 0}
-  leftRearWheel: {fileID: 0}
-  rightRearWheel: {fileID: 0}
+  rightFrontWheel: {fileID: 228088138}
+  leftCenterWheel: {fileID: 228088137}
+  rightCenterWheel: {fileID: 228088136}
+  leftRearWheel: {fileID: 228088135}
+  rightRearWheel: {fileID: 228088134}
 --- !u!1 &228088133 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100044, guid: 75f084e0f070e48f09d391892fae8161,
+    type: 3}
+  m_PrefabInstance: {fileID: 228088130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &228088134 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100048, guid: 75f084e0f070e48f09d391892fae8161,
+    type: 3}
+  m_PrefabInstance: {fileID: 228088130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &228088135 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100042, guid: 75f084e0f070e48f09d391892fae8161,
+    type: 3}
+  m_PrefabInstance: {fileID: 228088130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &228088136 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100046, guid: 75f084e0f070e48f09d391892fae8161,
+    type: 3}
+  m_PrefabInstance: {fileID: 228088130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &228088137 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100040, guid: 75f084e0f070e48f09d391892fae8161,
+    type: 3}
+  m_PrefabInstance: {fileID: 228088130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &228088138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100038, guid: 75f084e0f070e48f09d391892fae8161,
     type: 3}
   m_PrefabInstance: {fileID: 228088130}
   m_PrefabAsset: {fileID: 0}
@@ -976,6 +1006,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4224801822505238522, guid: 7b3293ba46b0d46aa9ac6569be3df610,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274873701517981592, guid: 7b3293ba46b0d46aa9ac6569be3df610,
         type: 3}
       propertyPath: m_IsActive
       value: 0
