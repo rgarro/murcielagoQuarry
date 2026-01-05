@@ -12,8 +12,10 @@ using UnityEngine;
  *      /_,-/ ,-. \ `._____|__________||/ ,-. \ \_[
  *          /\ `-' /                    /\ `-' /
  *            `---'                       `---'         
- * Vaya al cajerito adrento de GAP, saque la harina, pero le deja la mitad al Piedrero que deja entrar 
- * Saqueme la planilla le dijo al parse, yo le dono la mitad a su Bar
+ * es un ATM que con solo el numero de cedula y huella digital da la plata ,si me encuentra la mia le doy la mitad
+ * lo veo en el parque Morazan y lo invito a un hotdog
+ * 
+ *
  *
  *
  * @author Rolando<rgarro@gmail.com>
@@ -28,15 +30,33 @@ public class caterpillarCT660Controller : MonoBehaviour
     public GameObject leftRearWheel;
     public GameObject rightRearWheel;
 
+    public float anglesToTurn = 3.00f;
+
     // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    void increaseShiftGear(){}
+    void increaseShiftGear(){
+//automatic no clutch
+    }
 
-    void decreaseShiftGear(){}
+    void decreaseShiftGear(){
+
+    }
+
+    void accelerate(){
+
+    }
+
+    void rotateWheelsForward(){
+
+    }
+
+    void rotateWheelsBackward(){
+
+    }
 
     // Update is called once per frame
     void Update()
