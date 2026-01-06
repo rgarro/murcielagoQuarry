@@ -12,8 +12,7 @@ using UnityEngine;
  *      /_,-/ ,-. \ `._____|__________||/ ,-. \ \_[
  *          /\ `-' /                    /\ `-' /
  *            `---'                       `---'         
- * es un ATM que con solo el numero de cedula y huella digital da la plata ,si me encuentra la mia le doy la mitad
- * lo veo en el parque Morazan y lo invito a un hotdog
+ * Caterpillar CT660 Controller
  * 
  *
  *
