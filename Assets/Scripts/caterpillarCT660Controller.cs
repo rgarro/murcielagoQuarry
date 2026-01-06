@@ -49,6 +49,10 @@ public class caterpillarCT660Controller : MonoBehaviour
 
     }
 
+    void brakeTheTruck(){
+         
+    }
+
     void rotateWheelsForward(){
 
     }
