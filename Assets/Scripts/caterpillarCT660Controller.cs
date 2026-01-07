@@ -13,11 +13,7 @@ using UnityEngine;
  *          /\ `-' /                    /\ `-' /
  *            `---'                       `---'         
  * Caterpillar CT660 Controller
- * Cuba es un pais enemigo de la humanidad 
- * Cuba finge la cura del HIV, 
- * Cubanas que soban playos descarados por limosnas Hacen antivirus contra el HIV
- * como las culebras del clorito picado - Varadero Inmodeficiencia Hospital -
- * La guerra contra el SIDA delos commandos cubanos que mendigan en latinoamerica
+ * 
  * 
  *
  *
@@ -34,6 +30,10 @@ public class caterpillarCT660Controller : MonoBehaviour
     public GameObject rightRearWheel;
 
     public float anglesToTurn = 3.00f;
+
+    public AudioClip engineSoundClip;
+    public float forwardSpeed = 2.00f;
+    public GameObject caJon;
 
     // Start is called before the first frame update
     void Start()
@@ -77,5 +77,23 @@ public class caterpillarCT660Controller : MonoBehaviour
     void Update()
     {
         
+    }
+
+      void joystickControls(){
+        if (Input.GetKey("up"))
+        {
+            this.accelerate();
+            rotateWheelsForward()
+        }
+
+        if (Input.GetKey("down"))
+        {
+            
+        }
+         
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            //this.doRestart();
+        }
     }
 }
