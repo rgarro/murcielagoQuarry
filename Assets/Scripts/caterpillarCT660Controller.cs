@@ -12,9 +12,9 @@ using UnityEngine;
  *      /_,-/ ,-. \ `._____|__________||/ ,-. \ \_[
  *          /\ `-' /                    /\ `-' /
  *            `---'                       `---'         
- * Caterpillar CT660 Controller
- * 
- * 
+ *            Caterpillar CT660 Controller
+ *      HoverCraft style to save resources, torque is unreal but heats cheap computers
+ *         rotates loader and tranlates loads
  *
  *
  * @author Rolando<rgarro@gmail.com>
@@ -35,10 +35,19 @@ public class caterpillarCT660Controller : MonoBehaviour
     public float forwardSpeed = 2.00f;
     public GameObject caJon;
 
+    private AudioSource soundPlayer;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        this.soundPlayer = GetComponent<AudioSource>();
+    }
+
+    private void playEngineSoundOn(){
+        this.soundPlayer.clip = this.engineSoundClip;
+        if (!this.soundPlayer.isPlaying) {
+            this.soundPlayer.Play ();
+        }
     }
 
     void increaseShiftGear(){
@@ -50,7 +59,8 @@ public class caterpillarCT660Controller : MonoBehaviour
     }
 
     void accelerate(){
-
+        this.playEngineSoundOn();
+        this.transform.Translate(Vector3.forward * this.forwardSpeed * Time.deltaTime);
     }
 
     void brakeTheTruck(){
@@ -83,7 +93,7 @@ public class caterpillarCT660Controller : MonoBehaviour
         if (Input.GetKey("up"))
         {
             this.accelerate();
-            rotateWheelsForward()
+            rotateWheelsForward();
         }
 
         if (Input.GetKey("down"))
