@@ -17,7 +17,7 @@ using UnityEngine;
  *         rotates loader and tranlates loads
  *
  *
- * @author Rolando<rgarro@gmail.com>
+ * @author Rolando<rgarro@gmail.com> <https://emptyart.github.io>
  */
 public class caterpillarCT660Controller : MonoBehaviour
 {
