@@ -35,6 +35,8 @@ public class caterpillarCT660Controller : MonoBehaviour
     public float forwardSpeed = 2.00f;
     public GameObject caJon;
 
+    public float accelerationDecelerationRate = 0.5f;
+
     private AudioSource soundPlayer;
 
     // Start is called before the first frame update
@@ -59,6 +61,10 @@ public class caterpillarCT660Controller : MonoBehaviour
     }
 
     void accelerate(){
+        this.forwardSpeed += this.accelerationDecelerationRate;
+    }
+
+    void moveForward(){
         this.playEngineSoundOn();
         this.transform.Translate(Vector3.forward * this.forwardSpeed * Time.deltaTime);
     }
@@ -92,8 +98,8 @@ public class caterpillarCT660Controller : MonoBehaviour
       void joystickControls(){
         if (Input.GetKey("up"))
         {
-            this.accelerate();
-            rotateWheelsForward();
+            this.moveForward();
+            //rotateWheelsForward();
         }
 
         if (Input.GetKey("down"))
