@@ -268,6 +268,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: 75f084e0f070e48f09d391892fae8161, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75f084e0f070e48f09d391892fae8161, type: 3}
 --- !u!1 &228088131 stripped
@@ -295,6 +299,10 @@ MonoBehaviour:
   leftRearWheel: {fileID: 228088135}
   rightRearWheel: {fileID: 228088134}
   anglesToTurn: 3
+  engineSoundClip: {fileID: 8300000, guid: a36d30b918914401cbdad53bad4b4e32, type: 3}
+  forwardSpeed: 2
+  caJon: {fileID: 228088139}
+  accelerationDecelerationRate: 0.5
 --- !u!1 &228088133 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100044, guid: 75f084e0f070e48f09d391892fae8161,
@@ -328,6 +336,12 @@ GameObject:
 --- !u!1 &228088138 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100038, guid: 75f084e0f070e48f09d391892fae8161,
+    type: 3}
+  m_PrefabInstance: {fileID: 228088130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &228088139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100012, guid: 75f084e0f070e48f09d391892fae8161,
     type: 3}
   m_PrefabInstance: {fileID: 228088130}
   m_PrefabAsset: {fileID: 0}
@@ -1353,6 +1367,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GarbaniaEastSide
+      objectReference: {fileID: 0}
+    - target: {fileID: 8634148813048280683, guid: db1179c3035c9431c91717503c60691e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db1179c3035c9431c91717503c60691e, type: 3}

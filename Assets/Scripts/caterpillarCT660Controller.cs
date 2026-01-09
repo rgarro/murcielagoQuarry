@@ -39,6 +39,9 @@ public class caterpillarCT660Controller : MonoBehaviour
 
     private AudioSource soundPlayer;
 
+    private bool isMovingForward = false;
+    private bool isMovingBackward = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -69,6 +72,10 @@ public class caterpillarCT660Controller : MonoBehaviour
         this.transform.Translate(Vector3.forward * this.forwardSpeed * Time.deltaTime);
     }
 
+    void moveBackward(){
+
+    }
+
     void brakeTheTruck(){
          
     }
@@ -92,19 +99,28 @@ public class caterpillarCT660Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(this.isMovingForward){
+            this.rotateWheelsForward();
+        }
+
+        if(this.isMovingBackward){
+            this.rotateWheelsBackward();
+        }
     }
 
       void joystickControls(){
         if (Input.GetKey("up"))
         {
             this.moveForward();
-            //rotateWheelsForward();
+            this.isMovingBackward = false;
+            this.isMovingForward = true;
         }
 
         if (Input.GetKey("down"))
         {
-            
+            this.moveBackward();
+             this.isMovingForward = false;
+             this.isMovingBackward = true;
         }
          
         if (Input.GetKeyDown(KeyCode.Escape))
