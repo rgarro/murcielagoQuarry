@@ -11,13 +11,21 @@ using UnityEngine;
  * NO MENDIGUE A MI NOMBRE , DONT BEG MONEY ON MY BEHALF
  * Yo no autorizo mendigos a recolectar a mi nombre
  * Yo NO AUTORIZO A USAR MI FIRMA
- * recuerde, mendigar es una enfermedad grave, causa stress y desilusion
+ * mendigar es una enfermedad grave, causa stress y desilusion
+ * 
  *
  *
  * @author Rolando<rgarro@gmail.com> <https://emptyart.github.io>
  */
 public class truckChooser : MonoBehaviour
 {
+    public string backHoeTag = "backHoeTag";
+    public string loaderTag = "loaderTag";
+    public string caterpillarTag = "catTag";
+    public string truckTag = "loaderTag";
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,5 +36,9 @@ public class truckChooser : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnGUI(){
+
     }
 }
