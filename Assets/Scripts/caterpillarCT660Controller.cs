@@ -41,6 +41,7 @@ public class caterpillarCT660Controller : MonoBehaviour
 
     private bool isMovingForward = false;
     private bool isMovingBackward = false;
+    private bool isBrake = false;
 
     // Start is called before the first frame update
     void Start()
@@ -69,11 +70,15 @@ public class caterpillarCT660Controller : MonoBehaviour
 
     void moveForward(){
         this.playEngineSoundOn();
-        this.transform.Translate(Vector3.forward * this.forwardSpeed * Time.deltaTime);
+        if(!this.isBrake){
+            this.transform.Translate(Vector3.forward * this.forwardSpeed * Time.deltaTime);
+        }
     }
 
     void moveBackward(){
-
+        if(!this.isBrake){
+            this.transform.Translate(-Vector3.forward * this.forwardSpeed * Time.deltaTime);
+        }
     }
 
     void brakeTheTruck(){
