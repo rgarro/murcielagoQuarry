@@ -15,7 +15,7 @@ using UnityEngine;
  *            Caterpillar CT660 Controller
  *      HoverCraft style to save resources, torque is unreal but heats cheap computers
  *         rotates loader and tranlates loads
- *
+ * inspired from An ECU from 1995 with 32 kb from the land of OBDI 
  *
  * @author Rolando<rgarro@gmail.com> <https://emptyart.github.io>
  */
@@ -82,7 +82,11 @@ public class caterpillarCT660Controller : MonoBehaviour
     }
 
     void brakeTheTruck(){
-         
+         this.isBrake = true;
+    }
+
+    void releaseTheBrake(){
+         this.isBrake = true;
     }
 
     void rotateWheelsForward(){
@@ -128,9 +132,15 @@ public class caterpillarCT660Controller : MonoBehaviour
              this.isMovingBackward = true;
         }
          
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             //this.doRestart();
+            this.brakeTheTruck();
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            //this.doRestart();
+            this.releaseTheBrake();
         }
     }
 }
