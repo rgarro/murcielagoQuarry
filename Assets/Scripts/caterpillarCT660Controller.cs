@@ -36,6 +36,10 @@ public class caterpillarCT660Controller : MonoBehaviour
     public GameObject caJon;
 
     public float accelerationDecelerationRate = 0.5f;
+    //rango de fabrica no configurable por que es limitable, grabar los key presses del tractor y hacer dibujos a espalda de los jugadores vale $5000USD por que sale una prueba sicologica dificil de lograr ...
+    private float minForwardSpeed = 1.0f;
+    private float maxForwardSpeed = 5.0f;
+
 
     private AudioSource soundPlayer;
 
@@ -65,7 +69,11 @@ public class caterpillarCT660Controller : MonoBehaviour
     }
 
     void accelerate(){
-        this.forwardSpeed += this.accelerationDecelerationRate;
+        if(this.minForwardSpeed <= this.forwardSpeed <= maxForwardSpeed){
+            this.forwardSpeed += this.accelerationDecelerationRate;
+        }else{
+            //flasyText dash warning con la pepsi negra de volver al futuro , al mismo tiempo que pase el centro de reciclaje san miguel
+        }
     }
 
     void moveForward(){
@@ -118,6 +126,10 @@ public class caterpillarCT660Controller : MonoBehaviour
     }
 
       void joystickControls(){
+         if (Input.GetKey("a")){
+            this.accelerate();
+         }
+
         if (Input.GetKey("up"))
         {
             this.moveForward();
