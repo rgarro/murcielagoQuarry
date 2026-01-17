@@ -70,7 +70,8 @@ public class caterpillarCT660Controller : MonoBehaviour
     }
 
     void accelerate(){
-        if(this.minForwardSpeed <= this.forwardSpeed <= this.maxForwardSpeed){
+        //if(this.minForwardSpeed <= this.forwardSpeed <= this.maxForwardSpeed){
+        if(!Mathf.Approximately(this.minForwardSpeed,this.forwardSpeed) && !Mathf.Approximately(this.maxForwardSpeed,this.forwardSpeed)){
             this.forwardSpeed += this.accelerationDecelerationRate;
         }else{
             //flasyText dash warning con la pepsi negra de volver al futuro , al mismo tiempo que pase el centro de reciclaje san miguel
