@@ -17,6 +17,7 @@ using UnityEngine;
  *         rotates loader and tranlates loads
  * inspired from An ECU from 1995 with 32 kb from the land of OBDI 
  *
+ *
  * @author Rolando<rgarro@gmail.com> <https://emptyart.github.io>
  */
 public class caterpillarCT660Controller : MonoBehaviour
@@ -36,7 +37,7 @@ public class caterpillarCT660Controller : MonoBehaviour
     public GameObject caJon;
 
     public float accelerationDecelerationRate = 0.5f;
-    //rango de fabrica no configurable por que es limitable, grabar los key presses del tractor y hacer dibujos a espalda de los jugadores vale $5000USD por que sale una prueba sicologica dificil de lograr ...
+    //rango de fabrica no configurable por que es limitable, grabar los key presses del tractor y hacer dibujos a espalda de los jugadores vale $15000USD por que sale una prueba sicologica dificil de lograr ...
     private float minForwardSpeed = 1.0f;
     private float maxForwardSpeed = 5.0f;
 
@@ -69,7 +70,7 @@ public class caterpillarCT660Controller : MonoBehaviour
     }
 
     void accelerate(){
-        if(this.minForwardSpeed <= this.forwardSpeed <= maxForwardSpeed){
+        if(this.minForwardSpeed <= this.forwardSpeed <= this.maxForwardSpeed){
             this.forwardSpeed += this.accelerationDecelerationRate;
         }else{
             //flasyText dash warning con la pepsi negra de volver al futuro , al mismo tiempo que pase el centro de reciclaje san miguel

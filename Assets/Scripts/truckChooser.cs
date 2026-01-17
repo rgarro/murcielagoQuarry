@@ -8,10 +8,7 @@ using UnityEngine;
  *      >(________|__|_[_________]_|____|_/\_|___|_|___________|_|
  *      _/oo OOOOO oo`  ooo   ooo   o^o       o^o   o^o     o^o
  *     -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
- * NO MENDIGUE A MI NOMBRE , DONT BEG MONEY ON MY BEHALF
- * Yo no autorizo mendigos a recolectar a mi nombre
- * Yo NO AUTORIZO A USAR MI FIRMA
- * mendigar es una enfermedad grave, causa stress y desilusion
+ *  Button Navigator Allowing to swap vehicles
  * 
  *
  *
@@ -40,5 +37,13 @@ public class truckChooser : MonoBehaviour
 
     void OnGUI(){
 
+    }
+
+    void activateBackHoe(){
+
+    }
+
+    void deactivateBackHoe(){
+        
     }
 }
