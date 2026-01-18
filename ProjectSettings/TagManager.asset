@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - GarbaniaEastSide
+  - CT660CabinCamera
   layers:
   - Default
   - TransparentFX

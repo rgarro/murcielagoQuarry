@@ -12,7 +12,7 @@ using UnityEngine;
  *      /_,-/ ,-. \ `._____|__________||/ ,-. \ \_[
  *          /\ `-' /                    /\ `-' /
  *            `---'                       `---'         
- *            Caterpillar CT660 Controller
+ *            Caterpillar CT660 Controller with cabin view , follow and front cameras
  *      Torque push style engine , so it has the same risk of overturn on difficult surface
  * or wheel colliders turning
  *         rotates loader and tranlates loads
