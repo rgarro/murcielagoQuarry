@@ -13,7 +13,8 @@ using UnityEngine;
  *          /\ `-' /                    /\ `-' /
  *            `---'                       `---'         
  *            Caterpillar CT660 Controller
- *      HoverCraft style to save resources, torque is unreal but heats cheap computers
+ *      Torque push style engine , so it has the same risk of overturn on difficult surface
+ * or wheel colliders turning
  *         rotates loader and tranlates loads
  * inspired from An ECU from 1995 with 32 kb from the land of OBDI 
  *
@@ -66,13 +67,22 @@ public class caterpillarCT660Controller : MonoBehaviour
     }
 
     void decreaseShiftGear(){
-
+//dejalo automatico con indicador de shift qhe cambia en aceleracion
     }
 
     void accelerate(){
         //if(this.minForwardSpeed <= this.forwardSpeed <= this.maxForwardSpeed){
         if(!Mathf.Approximately(this.minForwardSpeed,this.forwardSpeed) && !Mathf.Approximately(this.maxForwardSpeed,this.forwardSpeed)){
             this.forwardSpeed += this.accelerationDecelerationRate;
+        }else{
+            //flasyText dash warning con la pepsi negra de volver al futuro , al mismo tiempo que pase el centro de reciclaje san miguel
+        }
+    }
+
+    void deccelerate(){
+        //if(this.minForwardSpeed <= this.forwardSpeed <= this.maxForwardSpeed){
+        if(!Mathf.Approximately(this.minForwardSpeed,this.forwardSpeed) && !Mathf.Approximately(this.maxForwardSpeed,this.forwardSpeed)){
+            this.forwardSpeed -= this.accelerationDecelerationRate;
         }else{
             //flasyText dash warning con la pepsi negra de volver al futuro , al mismo tiempo que pase el centro de reciclaje san miguel
         }
@@ -130,6 +140,10 @@ public class caterpillarCT660Controller : MonoBehaviour
       void joystickControls(){
          if (Input.GetKey("a")){
             this.accelerate();
+         }
+
+          if (Input.GetKey("s")){
+            this.deccelerate();
          }
 
         if (Input.GetKey("up"))
