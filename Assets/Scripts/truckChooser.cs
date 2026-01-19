@@ -7,9 +7,11 @@ using UnityEngine;
  *       .][__n_n_|DD[  ====_____  |    |.\/.|   | |   |_|     |_
  *      >(________|__|_[_________]_|____|_/\_|___|_|___________|_|
  *      _/oo OOOOO oo`  ooo   ooo   o^o       o^o   o^o     o^o
- *     -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
- *  Button Navigator Allowing to swap vehicles
+ *   -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+ *  Button Navigator Allowing to swap among 4 vehicles
  * 
+ * El tren se detenia en un bajo en riogrande de Atenas donde un blimp sigue las calles de viento de los DC3
+ * servia para llegar a Honduras que es un pais muy gacho 
  *
  *
  * @author Rolando<rgarro@gmail.com> <https://emptyart.github.io>
@@ -20,6 +22,12 @@ public class truckChooser : MonoBehaviour
     public string loaderTag = "loaderTag";
     public string caterpillarTag = "catTag";
     public string truckTag = "loaderTag";
+
+    public GUISkin btnSkin;
+    public Texture2D backHoeIcon;
+    public Texture2D loaderIcon;
+    public Texture2D caterpillarIcon;
+    public Texture2D truckIcon;
 
 
 
