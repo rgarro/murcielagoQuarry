@@ -10,9 +10,6 @@ using UnityEngine;
  *   -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
  *  Button Navigator Allowing to swap among 4 vehicles
  * 
- * El tren se detenia en un bajo en riogrande de Atenas donde un blimp sigue las calles de viento de los DC3
- * servia para llegar a Honduras que es un pais muy gacho 
- *
  *
  * @author Rolando<rgarro@gmail.com> <https://emptyart.github.io>
  */
@@ -52,6 +49,14 @@ public class truckChooser : MonoBehaviour
     }
 
     void deactivateBackHoe(){
+        
+    }
+
+     void activateLoader(){
+
+    }
+
+    void deactivateLoader(){
         
     }
 }
