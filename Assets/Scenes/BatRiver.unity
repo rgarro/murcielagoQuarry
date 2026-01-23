@@ -364,7 +364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   windowX: 40
-  windowY: 65
+  windowY: 90
   windowHeight: 400
   windowWidth: 150
   instructionsString: 'Drive: Arrow Keys \n\nBrakes: F, G\n\nDump Loader: Slider\n\nDump
@@ -438,6 +438,35 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 0
+--- !u!114 &228088142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228088131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cc040b1ff9f3462fa9366edd7f19182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons_x_corner: 200
+  btnSkin: {fileID: 0}
+  FrontCameraIcon: {fileID: 0}
+  FollowCameraIcon: {fileID: 0}
+  MainCameraIcon: {fileID: 0}
+  follow_camera: {fileID: 0}
+  front_camera: {fileID: 0}
+  main_camera: {fileID: 0}
+  boxWidth: 265
+  boxHeight: 90
+  boxY: 10
+  buttonWidth: 40
+  buttonHeight: 40
+  buttonY: 40
+  boxLabel: Cameras
+  displayButtons: 1
+  spaceXCornerFromFirst: 55
 --- !u!1 &304334299
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,8 +1322,8 @@ MonoBehaviour:
   audioData: {fileID: 969113820}
   IconX: 10
   IconY: 10
-  IconWidth: 128
-  IconHeight: 128
+  IconWidth: 58
+  IconHeight: 58
 --- !u!1 &977126174
 GameObject:
   m_ObjectHideFlags: 0
