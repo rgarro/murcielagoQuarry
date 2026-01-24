@@ -452,12 +452,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttons_x_corner: 200
   btnSkin: {fileID: 0}
-  FrontCameraIcon: {fileID: 0}
-  FollowCameraIcon: {fileID: 0}
-  MainCameraIcon: {fileID: 0}
-  follow_camera: {fileID: 0}
-  front_camera: {fileID: 0}
-  main_camera: {fileID: 0}
+  FrontCameraIcon: {fileID: 2800000, guid: 18bcce4c65c404fe895edc16ac4f42a8, type: 3}
+  FollowCameraIcon: {fileID: 2800000, guid: 02c86aea7032f438385f3537661f0a01, type: 3}
+  MainCameraIcon: {fileID: 2800000, guid: 23f30fe8107de49c89c1db2d710ed3e2, type: 3}
+  follow_camera: {fileID: 304334299}
+  front_camera: {fileID: 492309339}
+  main_camera: {fileID: 1549115924}
   boxWidth: 265
   boxHeight: 90
   boxY: 10
