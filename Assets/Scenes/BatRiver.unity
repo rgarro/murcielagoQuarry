@@ -364,8 +364,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   windowX: 40
-  windowY: 90
-  windowHeight: 400
+  windowY: 120
+  windowHeight: 320
   windowWidth: 150
   instructionsString: 'Drive: Arrow Keys \n\nBrakes: F, G\n\nDump Loader: Slider\n\nDump
     Loader near the warehouse'
@@ -464,7 +464,7 @@ MonoBehaviour:
   buttonWidth: 40
   buttonHeight: 40
   buttonY: 40
-  boxLabel: Cameras
+  boxLabel: Truck Loader Cameras
   displayButtons: 1
   spaceXCornerFromFirst: 55
 --- !u!1 &304334299
@@ -1230,7 +1230,6 @@ GameObject:
   m_Component:
   - component: {fileID: 969113818}
   - component: {fileID: 969113819}
-  - component: {fileID: 969113821}
   - component: {fileID: 969113820}
   - component: {fileID: 969113822}
   m_Layer: 0
@@ -1363,20 +1362,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &969113821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969113817}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80a50676592b24dba97fabf5d8e1fdbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SoundIcon: {fileID: 2800000, guid: d82497040180ac744bbbda22a440a0e6, type: 3}
-  audioData: {fileID: 969113820}
 --- !u!114 &969113822
 MonoBehaviour:
   m_ObjectHideFlags: 0
