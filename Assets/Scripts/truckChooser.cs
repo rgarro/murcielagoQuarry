@@ -20,11 +20,18 @@ public class truckChooser : MonoBehaviour
     public string caterpillarTag = "catTag";
     public string truckTag = "loaderTag";
 
+    protected bool loader_is_on = true;
+    protected bool backHoe_is_on = false;
+    protected bool caterpillar_is_on = false;
+    protected bool truck_is_on = false;
+
     public GUISkin btnSkin;
     public Texture2D backHoeIcon;
     public Texture2D loaderIcon;
     public Texture2D caterpillarIcon;
     public Texture2D truckIcon;
+
+    protected int buttons_x_corner = 150;
 
 
 
@@ -41,7 +48,9 @@ public class truckChooser : MonoBehaviour
     }
 
     void OnGUI(){
+        if(GUI.Button(new Rect(this.buttons_x_corner,20,40,40), this.backHoeIcon)){
 
+        } 
     }
 
     void activateBackHoe(){
