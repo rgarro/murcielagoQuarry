@@ -109,8 +109,14 @@ public class caterpillarCT660Controller : MonoBehaviour
          this.isBrake = true;
     }
 
-    void rotateWheelsForward(){
+    void wheelDrive(){
+        Vector3 rotationDirection = Vector3.up;//wheeldrive rotation
+    }
 
+    void rotateWheelsForward(){
+        Vector3 rotationDirection = Vector3.forward;
+        this.leftFrontWheel.transform.Rotate(rotationDirection * this.forwardSpeed * Time.deltaTime);
+        this.rightFrontWheel.transform.Rotate(rotationDirection * this.forwardSpeed * Time.deltaTime);
     }
 
     void rotateWheelsBackward(){
