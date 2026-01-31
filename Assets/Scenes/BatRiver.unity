@@ -479,6 +479,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03df64d5a77e84b4f832a67dea12f828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dashboard: {fileID: 768911565598042905, guid: e9d4139becd844b40b65b4cfca89fcb4,
+    type: 3}
+  dashboardIcon: {fileID: 0}
+  buttons_x_corner: 365
+  buttons_y_corner: 10
+  buttonWidth: 40
+  buttonHeight: 40
 --- !u!1 &304334299
 GameObject:
   m_ObjectHideFlags: 0

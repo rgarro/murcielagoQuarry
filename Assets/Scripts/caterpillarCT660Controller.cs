@@ -91,6 +91,7 @@ public class caterpillarCT660Controller : MonoBehaviour
     void moveForward(){
         this.playEngineSoundOn();
         if(!this.isBrake){
+            this.rotateWheelsForward();
             this.transform.Translate(Vector3.forward * this.forwardSpeed * Time.deltaTime);
         }
     }

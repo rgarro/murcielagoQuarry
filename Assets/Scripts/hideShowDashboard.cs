@@ -25,7 +25,12 @@ public class hideShowDashboard : MonoBehaviour
  
     public GameObject dashboard;
     public Texture2D dashboardIcon;
-     protected bool audio_is_on = true;
+    protected bool dashboard_is_on = true;
+    //button centering ...
+    public int buttons_x_corner = 25;
+    public int buttons_y_corner = 25;
+    public int buttonWidth = 40;
+    public int buttonHeight = 40;
  
     // Start is called before the first frame update
     void Start()
@@ -39,6 +44,19 @@ public class hideShowDashboard : MonoBehaviour
 
     void deactivateDash(){
         this.dashboard.SetActive(false);
+    }
+
+     void OnGUI(){
+        if(GUI.Button(new Rect(this.buttons_x_corner,this.buttons_x_corner,this.buttonWidth,this.buttonHeight), this.dashboardIcon)) 
+        {
+               if(this.dashboard_is_on){
+                this.deactivateDash();
+                this.dashboard_is_on = false;
+            } else {
+                this.activateDash();
+                this.dashboard_is_on = true;
+            }
+        }		
     }
 
     // Update is called once per frame
