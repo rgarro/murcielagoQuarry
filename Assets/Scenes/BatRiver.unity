@@ -486,6 +486,7 @@ MonoBehaviour:
   buttons_y_corner: 22
   buttonWidth: 40
   buttonHeight: 40
+  childrenTag: dashHolder
 --- !u!1 &304334299
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,7 +841,7 @@ GameObject:
   - component: {fileID: 580898737}
   m_Layer: 0
   m_Name: Wheel
-  m_TagString: Untagged
+  m_TagString: dashHolder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2091,6 +2092,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 768911564702285675, guid: e9d4139becd844b40b65b4cfca89fcb4,
+        type: 3}
+      propertyPath: m_TagString
+      value: dashHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 768911565120329404, guid: e9d4139becd844b40b65b4cfca89fcb4,
+        type: 3}
+      propertyPath: m_TagString
+      value: dashHolder
+      objectReference: {fileID: 0}
     - target: {fileID: 768911565598042904, guid: e9d4139becd844b40b65b4cfca89fcb4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2210,6 +2221,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 768911566398753961, guid: e9d4139becd844b40b65b4cfca89fcb4,
+        type: 3}
+      propertyPath: m_TagString
+      value: dashHolder
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9d4139becd844b40b65b4cfca89fcb4, type: 3}

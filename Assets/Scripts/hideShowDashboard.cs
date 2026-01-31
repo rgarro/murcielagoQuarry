@@ -31,6 +31,7 @@ public class hideShowDashboard : MonoBehaviour
     public int buttons_y_corner = 25;
     public int buttonWidth = 40;
     public int buttonHeight = 40;
+    public string childrenTag = "gauges";
  
     // Start is called before the first frame update
     void Start()
@@ -39,10 +40,18 @@ public class hideShowDashboard : MonoBehaviour
     }
 
     void activateDash(){
+        GameObject[] gauges =  GameObject.FindGameObjectsWithTag(this.childrenTag);
+        for (int i = 0; i < gauges.Length; i++){
+            gauges[i].SetActive(true);
+        }
         this.dashboard.SetActive(true);
     }
 
     void deactivateDash(){
+        GameObject[] gauges =  GameObject.FindGameObjectsWithTag(this.childrenTag);
+        for (int i = 0; i < gauges.Length; i++){
+            gauges[i].SetActive(false);
+        }
         this.dashboard.SetActive(false);
     }
 
@@ -51,13 +60,13 @@ public class hideShowDashboard : MonoBehaviour
         {
                if(this.dashboard_is_on){
                 Debug.Log("dashboard on click ...");
-                //this.deactivateDash();
-                this.dashboard.SetActive(false);
+                this.deactivateDash();
+                //this.dashboard.SetActive(false);
                 this.dashboard_is_on = false;
             } else {
                 Debug.Log("dashboard off click ...");
-                //this.activateDash();
-                this.dashboard.SetActive(true);
+                this.activateDash();
+                //this.dashboard.SetActive(true);
                 this.dashboard_is_on = true;
             }
         }		
