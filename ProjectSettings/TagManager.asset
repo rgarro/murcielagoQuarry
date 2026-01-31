@@ -6,6 +6,8 @@ TagManager:
   tags:
   - GarbaniaEastSide
   - CT660CabinCamera
+  - speedNeedle
+  - dashHolder
   layers:
   - Default
   - TransparentFX

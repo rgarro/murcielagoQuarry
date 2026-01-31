@@ -481,9 +481,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dashboard: {fileID: 768911565598042905, guid: e9d4139becd844b40b65b4cfca89fcb4,
     type: 3}
-  dashboardIcon: {fileID: 0}
-  buttons_x_corner: 365
-  buttons_y_corner: 10
+  dashboardIcon: {fileID: 2800000, guid: afbc86b50d47a478f9d53ffc51a640bb, type: 3}
+  buttons_x_corner: 475
+  buttons_y_corner: 22
   buttonWidth: 40
   buttonHeight: 40
 --- !u!1 &304334299
@@ -2200,6 +2200,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dashHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 768911565598042905, guid: e9d4139becd844b40b65b4cfca89fcb4,
+        type: 3}
+      propertyPath: m_TagString
+      value: dashHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 768911565598042905, guid: e9d4139becd844b40b65b4cfca89fcb4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9d4139becd844b40b65b4cfca89fcb4, type: 3}

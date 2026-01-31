@@ -35,7 +35,7 @@ public class hideShowDashboard : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        this.dashboard.SetActive(true);
     }
 
     void activateDash(){
@@ -47,13 +47,17 @@ public class hideShowDashboard : MonoBehaviour
     }
 
      void OnGUI(){
-        if(GUI.Button(new Rect(this.buttons_x_corner,this.buttons_x_corner,this.buttonWidth,this.buttonHeight), this.dashboardIcon)) 
+        if(GUI.Button(new Rect(this.buttons_x_corner,this.buttons_y_corner,this.buttonWidth,this.buttonHeight), this.dashboardIcon)) 
         {
                if(this.dashboard_is_on){
-                this.deactivateDash();
+                Debug.Log("dashboard on click ...");
+                //this.deactivateDash();
+                this.dashboard.SetActive(false);
                 this.dashboard_is_on = false;
             } else {
-                this.activateDash();
+                Debug.Log("dashboard off click ...");
+                //this.activateDash();
+                this.dashboard.SetActive(true);
                 this.dashboard_is_on = true;
             }
         }		
