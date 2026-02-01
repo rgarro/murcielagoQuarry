@@ -484,8 +484,8 @@ MonoBehaviour:
   dashboardIcon: {fileID: 2800000, guid: afbc86b50d47a478f9d53ffc51a640bb, type: 3}
   buttons_x_corner: 475
   buttons_y_corner: 22
-  buttonWidth: 40
-  buttonHeight: 40
+  buttonWidth: 70
+  buttonHeight: 70
   childrenTag: dashHolder
 --- !u!1 &304334299
 GameObject:
