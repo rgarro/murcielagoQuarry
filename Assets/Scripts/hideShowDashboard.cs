@@ -18,6 +18,7 @@ using UnityEngine;
  * Shows / Hides Dashboard with Turning Wheel
  *
  *
+ *
  * @author Rolando <rgarro@gmail.com> <https://emptyart.github.io>
  */
 public class hideShowDashboard : MonoBehaviour
@@ -32,25 +33,28 @@ public class hideShowDashboard : MonoBehaviour
     public int buttonWidth = 40;
     public int buttonHeight = 40;
     public string childrenTag = "gauges";
+    private GameObject[] gauges;
  
     // Start is called before the first frame update
     void Start()
     {
         this.dashboard.SetActive(true);
+        this.gauges =  GameObject.FindGameObjectsWithTag(this.childrenTag);
     }
 
     void activateDash(){
-        GameObject[] gauges =  GameObject.FindGameObjectsWithTag(this.childrenTag);
-        for (int i = 0; i < gauges.Length; i++){
-            gauges[i].SetActive(true);
+        
+        for (int i = 0; i < this.gauges.Length; i++){
+            Debug.Log("dashboard object "+i);
+            this.gauges[i].SetActive(true);
         }
         this.dashboard.SetActive(true);
     }
 
     void deactivateDash(){
-        GameObject[] gauges =  GameObject.FindGameObjectsWithTag(this.childrenTag);
-        for (int i = 0; i < gauges.Length; i++){
-            gauges[i].SetActive(false);
+        //this.gauges =  GameObject.FindGameObjectsWithTag(this.childrenTag);
+        for (int i = 0; i < this.gauges.Length; i++){
+            this.gauges[i].SetActive(false);
         }
         this.dashboard.SetActive(false);
     }
