@@ -19,21 +19,13 @@ using UnityEngine;
  * En los Juegos se vale poner cualquier cosa hijueputa
  * modificaciones de junta directiva , estupideces de contadores playos
  * Los LandRover son de Aluminio, el Jeep willys es un fierro , PIENSELO!!
- * mataron a Raquel la de la UIA , cerraron el Bar Romeral
- * shackle bracket vicker gun rotacion gravitacional opuesta contra la rotacion del arbol de levas
- * por eso los helicopteros tienen turbina con varilla de transmision de titanio y clutch de empuje de aire comprimido
- *  entonces hay que dispararles organismos electronicos que habitan en realidades estratosfericas
- * un drone MKraptor Mato a Somoza, un drone MKraptor Mato a Somoza
- * el comandante CERO fue verguiado por drones !!!
- * El Howitzer del Volcan Barva apunta a los ultras con municion fria que hace una explocion electrica de protones
- * las explociones de protones pueden pasar hasta inadvertidas, detienen la Vida y el cuerpo fisico se desintegra 
- * sin reaccion termica
- * Los Drones de Control Remoto son aviones de contro remoto, no son drones, solo son plataformas posibles
- * encontrando los canales del receptor e instalando un relay a un android soldado en el dron para que sea una
- * computadora con un control autonomo es algo que paga por verse hecho igual que secar Cacao ...
- * la metralleta vicker enfriada con agua montada en un shackle bracket de jeep willys para que la elevacion 
- * este en un rango de tiempo delta humano y sirva para pegar un DC3 piloteado humano la tenian los calderonistas en 1948;
- *   TOME CAFE 1820 ....
+ *
+ * Los Drones de Control Remoto son aviones de control remoto, no son drones, solo son plataformas posibles
+ * encontrando los canales del receptor e instalando un relay con USB a un android montado en el dron para que sea una
+ * computadora con un control autonomo, el Android tiene shell de Unix pero solo va a volar dentro del rango antenado 
+ *   TOME CAFE 1820 o pagueme a ver como sirve el radar buscando gases bajo tierra, luego polarize el LandRover y lo pasa por ahi ....
+ * Necesito $300mil para pagar el major en el MIT
+ *
  *
  *
  * @author Rolando <rgarro@gmail.com> <https://emptyart.github.io>
