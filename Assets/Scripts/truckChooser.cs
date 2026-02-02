@@ -33,12 +33,29 @@ public class truckChooser : MonoBehaviour
 
     protected int buttons_x_corner = 150;
 
+    public GameObject backHoe;
+    public GameObject loader;
+    public GameObject caterpillar;
+    public GameObject truck;
+
+    public int boxWidth = 265;
+    public int boxHeight = 90;
+    public int boxY = 10;
+    public int buttonWidth = 40;
+    public int buttonHeight = 40;
+    public int buttonY = 40;
+    public string boxLabel = "Truck Chooser";
+
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        this.truck.SetActive(true);//Vagoneta primero
+        this.backHoe.SetActive(false);
+        this.caterpillar.SetActive(false);
+        this.loader.SetActive(false);      
     }
 
     // Update is called once per frame
@@ -48,6 +65,8 @@ public class truckChooser : MonoBehaviour
     }
 
     void OnGUI(){
+        GUI.skin = this.btnSkin;
+        GUI.Box(new Rect(this.buttons_x_corner,this.boxY,this.boxWidth,this.boxHeight), this.boxLabel);
         if(GUI.Button(new Rect(this.buttons_x_corner,20,40,40), this.backHoeIcon)){
 
         } 

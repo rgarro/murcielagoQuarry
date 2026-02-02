@@ -16,15 +16,7 @@ using UnityEngine;
  *    \%\   /              \%\   /                  \%\   /
  *      ~~~~                 ~~~~                     ~~~~   
  * Shows / Hides Dashboard with Turning Wheel
- * En los Juegos se vale poner cualquier cosa hijueputa
- * modificaciones de junta directiva , estupideces de contadores playos
- * Los LandRover son de Aluminio, el Jeep willys es un fierro , PIENSELO!!
  *
- * Los Drones de Control Remoto son aviones de control remoto, no son drones, solo son plataformas posibles
- * encontrando los canales del receptor e instalando un relay con USB a un android montado en el dron para que sea una
- * computadora con un control autonomo, el Android tiene shell de Unix pero solo va a volar dentro del rango antenado 
- *   TOME CAFE 1820 o pagueme a ver como sirve el radar buscando gases bajo tierra, luego polarize el LandRover y lo pasa por ahi ....
- * Necesito $300mil para pagar el major en el MIT
  *
  *
  *
