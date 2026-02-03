@@ -20,10 +20,10 @@ public class truckChooser : MonoBehaviour
     public string caterpillarTag = "catTag";
     public string truckTag = "loaderTag";
 
-    protected bool loader_is_on = true;
+    protected bool loader_is_on = false;
     protected bool backHoe_is_on = false;
     protected bool caterpillar_is_on = false;
-    protected bool truck_is_on = false;
+    protected bool truck_is_on = false;//vagoneta primero
 
     public GUISkin btnSkin;
     public Texture2D backHoeIcon;
@@ -45,6 +45,7 @@ public class truckChooser : MonoBehaviour
     public int buttonHeight = 40;
     public int buttonY = 40;
     public string boxLabel = "Truck Chooser";
+    public int spaceXCornerFromFirst = 55;
 
 
 
@@ -67,9 +68,35 @@ public class truckChooser : MonoBehaviour
     void OnGUI(){
         GUI.skin = this.btnSkin;
         GUI.Box(new Rect(this.buttons_x_corner,this.boxY,this.boxWidth,this.boxHeight), this.boxLabel);
-        if(GUI.Button(new Rect(this.buttons_x_corner,20,40,40), this.backHoeIcon)){
+        //boton Vagoneta
+        if(GUI.Button(new Rect(this.buttons_x_corner+this.spaceXCornerFromFirst,this.buttonY,this.buttonWidth,this.buttonHeight), this.truckIcon)){
+            if(!this.truck_is_on){
+                this.truck.SetActive(true);//Vagoneta primero
+                this.backHoe.SetActive(false);
+                this.caterpillar.SetActive(false);
+                this.loader.SetActive(false);
+                this.truck_is_on = true;
+                this.loader_is_on = false;
+                this.backHoe_is_on = false;
+                this.caterpillar_is_on = false;   
+            }
+        }
+        //boton Caterpillar 
+        if(GUI.Button(new Rect(this.buttons_x_corner+this.spaceXCornerFromFirst,this.buttonY,this.buttonWidth,this.buttonHeight), this.caterpillarIcon)){
+            if(!this.caterpillar_is_on){
+                this.truck.SetActive(false);
+                this.backHoe.SetActive(false);
+                this.caterpillar.SetActive(true);//caterpillar
+                this.loader.SetActive(false);
+                this.truck_is_on = false;
+                this.loader_is_on = false;
+                this.backHoe_is_on = false;
+                this.caterpillar_is_on = true;   
+            }
+        }
+        //boto loader
 
-        } 
+        //boton backhoe
     }
 
     void activateBackHoe(){
