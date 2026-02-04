@@ -11,6 +11,7 @@ using UnityEngine;
  *  Button Navigator Allowing to swap among 4 vehicles
  * 
  *
+ *
  * @author Rolando<rgarro@gmail.com> <https://emptyart.github.io>
  */
 public class truckChooser : MonoBehaviour
@@ -31,7 +32,7 @@ public class truckChooser : MonoBehaviour
     public Texture2D caterpillarIcon;
     public Texture2D truckIcon;
 
-    protected int buttons_x_corner = 150;
+    public int buttons_x_corner = 150;
 
     public GameObject backHoe;
     public GameObject loader;
@@ -82,7 +83,7 @@ public class truckChooser : MonoBehaviour
             }
         }
         //boton Caterpillar 
-        if(GUI.Button(new Rect(this.buttons_x_corner+this.spaceXCornerFromFirst,this.buttonY,this.buttonWidth,this.buttonHeight), this.caterpillarIcon)){
+        if(GUI.Button(new Rect(this.buttons_x_corner+this.spaceXCornerFromFirst+55,this.buttonY,this.buttonWidth,this.buttonHeight), this.caterpillarIcon)){
             if(!this.caterpillar_is_on){
                 this.truck.SetActive(false);
                 this.backHoe.SetActive(false);
@@ -95,23 +96,30 @@ public class truckChooser : MonoBehaviour
             }
         }
         //boto loader
-
+        if(GUI.Button(new Rect(this.buttons_x_corner+this.spaceXCornerFromFirst+160,this.buttonY,this.buttonWidth,this.buttonHeight), this.backHoeIcon)){
+            if(!this.loader_is_on){
+                this.truck.SetActive(false);
+                this.backHoe.SetActive(false);
+                this.caterpillar.SetActive(false);
+                this.loader.SetActive(true);
+                this.truck_is_on = false;
+                this.loader_is_on = true;//loader
+                this.backHoe_is_on = false;
+                this.caterpillar_is_on = true;   
+            }
+        }
         //boton backhoe
-    }
-
-    void activateBackHoe(){
-
-    }
-
-    void deactivateBackHoe(){
-        
-    }
-
-     void activateLoader(){
-
-    }
-
-    void deactivateLoader(){
-        
+        if(GUI.Button(new Rect(this.buttons_x_corner+this.spaceXCornerFromFirst+105,this.buttonY,this.buttonWidth,this.buttonHeight), this.loaderIcon)){
+            if(!this.loader_is_on){
+                this.truck.SetActive(false);
+                this.backHoe.SetActive(true);
+                this.caterpillar.SetActive(false);
+                this.loader.SetActive(false);
+                this.truck_is_on = false;
+                this.loader_is_on = false;
+                this.backHoe_is_on = false;//backhoe
+                this.caterpillar_is_on = true;   
+            }
+        }
     }
 }

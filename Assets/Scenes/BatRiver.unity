@@ -1179,6 +1179,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 454fb81ea426240b69d85f5cb43c15f3, type: 3}
+--- !u!1 &883013663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: 454fb81ea426240b69d85f5cb43c15f3,
+    type: 3}
+  m_PrefabInstance: {fileID: 883013662}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &891814123
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,6 +1258,7 @@ GameObject:
   - component: {fileID: 969113819}
   - component: {fileID: 969113820}
   - component: {fileID: 969113822}
+  - component: {fileID: 969113821}
   m_Layer: 0
   m_Name: BatComputer
   m_TagString: Untagged
@@ -1382,6 +1389,40 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &969113821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969113817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a679da991382742b38f5fb2790da0cf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backHoeTag: backHoeTag
+  loaderTag: loaderTag
+  caterpillarTag: catTag
+  truckTag: loaderTag
+  btnSkin: {fileID: 0}
+  backHoeIcon: {fileID: 2800000, guid: 9dba2df7f518543deabd8b1959b31112, type: 3}
+  loaderIcon: {fileID: 2800000, guid: 836db016a569443de8c2f47975aeac30, type: 3}
+  caterpillarIcon: {fileID: 2800000, guid: 069f494a6bac64b71963421576c57b81, type: 3}
+  truckIcon: {fileID: 2800000, guid: 18f8e104d2b424022bbf79724d0fc9d1, type: 3}
+  buttons_x_corner: 570
+  backHoe: {fileID: 883013663}
+  loader: {fileID: 1992914507}
+  caterpillar: {fileID: 1207669505}
+  truck: {fileID: 228088131}
+  boxWidth: 265
+  boxHeight: 90
+  boxY: 10
+  buttonWidth: 40
+  buttonHeight: 40
+  buttonY: 40
+  boxLabel: Truck Chooser
+  spaceXCornerFromFirst: 30
 --- !u!114 &969113822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1580,6 +1621,10 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 7b3293ba46b0d46aa9ac6569be3df610, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2556391191116684819, guid: 7b3293ba46b0d46aa9ac6569be3df610,
         type: 3}
       propertyPath: m_IsActive
@@ -1597,6 +1642,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b3293ba46b0d46aa9ac6569be3df610, type: 3}
+--- !u!1 &1207669505 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100014, guid: 7b3293ba46b0d46aa9ac6569be3df610,
+    type: 3}
+  m_PrefabInstance: {fileID: 1207669504}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1257374446
 GameObject:
   m_ObjectHideFlags: 0
