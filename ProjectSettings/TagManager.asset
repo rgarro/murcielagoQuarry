@@ -8,6 +8,7 @@ TagManager:
   - CT660CabinCamera
   - speedNeedle
   - dashHolder
+  - caterpillarCamera
   layers:
   - Default
   - TransparentFX

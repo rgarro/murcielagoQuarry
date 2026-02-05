@@ -224,6 +224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaterpillarCT660
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 75f084e0f070e48f09d391892fae8161, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 75f084e0f070e48f09d391892fae8161, type: 3}
       propertyPath: m_LocalPosition.x
       value: 220.4
@@ -1521,6 +1525,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaterpillarD7R
       objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 7b3293ba46b0d46aa9ac6569be3df610, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 7b3293ba46b0d46aa9ac6569be3df610, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.98826015
@@ -1551,7 +1559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 7b3293ba46b0d46aa9ac6569be3df610, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 237.9
+      value: 236.2
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 7b3293ba46b0d46aa9ac6569be3df610, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1617,6 +1625,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.73
       objectReference: {fileID: 0}
+    - target: {fileID: 400078, guid: 7b3293ba46b0d46aa9ac6569be3df610, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400078, guid: 7b3293ba46b0d46aa9ac6569be3df610, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400078, guid: 7b3293ba46b0d46aa9ac6569be3df610, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400078, guid: 7b3293ba46b0d46aa9ac6569be3df610, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 7b3293ba46b0d46aa9ac6569be3df610, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
@@ -1624,6 +1648,21 @@ PrefabInstance:
     - target: {fileID: 9500000, guid: 7b3293ba46b0d46aa9ac6569be3df610, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276603737757889232, guid: 7b3293ba46b0d46aa9ac6569be3df610,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276603737757889232, guid: 7b3293ba46b0d46aa9ac6569be3df610,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276603737757889232, guid: 7b3293ba46b0d46aa9ac6569be3df610,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18.13
       objectReference: {fileID: 0}
     - target: {fileID: 2556391191116684819, guid: 7b3293ba46b0d46aa9ac6569be3df610,
         type: 3}
@@ -1635,16 +1674,37 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4224801822505238522, guid: 7b3293ba46b0d46aa9ac6569be3df610,
+        type: 3}
+      propertyPath: m_TagString
+      value: caterpillarCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 4224801822505238522, guid: 7b3293ba46b0d46aa9ac6569be3df610,
+        type: 3}
+      propertyPath: m_Name
+      value: caterpillarCamera
+      objectReference: {fileID: 0}
     - target: {fileID: 8274873701517981592, guid: 7b3293ba46b0d46aa9ac6569be3df610,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274873701517981592, guid: 7b3293ba46b0d46aa9ac6569be3df610,
+        type: 3}
+      propertyPath: m_Name
+      value: d7rScripts
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b3293ba46b0d46aa9ac6569be3df610, type: 3}
 --- !u!1 &1207669505 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100014, guid: 7b3293ba46b0d46aa9ac6569be3df610,
+    type: 3}
+  m_PrefabInstance: {fileID: 1207669504}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1207669506 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400014, guid: 7b3293ba46b0d46aa9ac6569be3df610,
     type: 3}
   m_PrefabInstance: {fileID: 1207669504}
   m_PrefabAsset: {fileID: 0}
@@ -1709,6 +1769,99 @@ WheelCollider:
     m_AsymptoteValue: 0.75
     m_Stiffness: 1
   m_Enabled: 1
+--- !u!1 &1338150073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1338150074}
+  - component: {fileID: 1338150077}
+  - component: {fileID: 1338150076}
+  - component: {fileID: 1338150075}
+  m_Layer: 0
+  m_Name: caterpillarCamera
+  m_TagString: caterpillarCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1338150074
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338150073}
+  m_LocalRotation: {x: 0.16375636, y: 0, z: 0, w: 0.9865008}
+  m_LocalPosition: {x: 0.12, y: 4.6, z: -11.95}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1207669506}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 18.85, y: 0, z: 0}
+--- !u!45 &1338150075
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338150073}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: ba700aa1a0ecc430c9046517fbd79111, type: 2}
+--- !u!81 &1338150076
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338150073}
+  m_Enabled: 1
+--- !u!20 &1338150077
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338150073}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.01
+  far clip plane: 980.4
+  field of view: 81.68693
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1 &1353713431
 GameObject:
   m_ObjectHideFlags: 0
