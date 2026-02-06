@@ -284,29 +284,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 228088130}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &228088132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 228088131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b3367caf1a5740b1bc80e4da0af167a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftFrontWheel: {fileID: 228088133}
-  rightFrontWheel: {fileID: 228088138}
-  leftCenterWheel: {fileID: 228088137}
-  rightCenterWheel: {fileID: 228088136}
-  leftRearWheel: {fileID: 228088135}
-  rightRearWheel: {fileID: 228088134}
-  anglesToTurn: 3
-  engineSoundClip: {fileID: 8300000, guid: a36d30b918914401cbdad53bad4b4e32, type: 3}
-  forwardSpeed: 2
-  caJon: {fileID: 228088139}
-  accelerationDecelerationRate: 0.5
 --- !u!1 &228088133 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100044, guid: 75f084e0f070e48f09d391892fae8161,
@@ -355,142 +332,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 228088130}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &228088141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 228088131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1abb39db6c99440148a3a3570d00ae92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  windowX: 40
-  windowY: 120
-  windowHeight: 320
-  windowWidth: 150
-  instructionsString: 'Drive: Arrow Keys \n\nBrakes: F, G\n\nDump Loader: Slider\n\nDump
-    Loader near the warehouse'
-  labelString: Dump Truck CT660 Instructions
-  marginVal: 25
-  style:
-    m_Name: 
-    m_Normal:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_Hover:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_Active:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_Focused:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_OnNormal:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_OnHover:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_OnActive:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_OnFocused:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_Border:
-      m_Left: 0
-      m_Right: 0
-      m_Top: 0
-      m_Bottom: 0
-    m_Margin:
-      m_Left: 0
-      m_Right: 0
-      m_Top: 0
-      m_Bottom: 0
-    m_Padding:
-      m_Left: 0
-      m_Right: 0
-      m_Top: 0
-      m_Bottom: 0
-    m_Overflow:
-      m_Left: 0
-      m_Right: 0
-      m_Top: 0
-      m_Bottom: 0
-    m_Font: {fileID: 0}
-    m_FontSize: 0
-    m_FontStyle: 0
-    m_Alignment: 0
-    m_WordWrap: 0
-    m_RichText: 1
-    m_TextClipping: 0
-    m_ImagePosition: 0
-    m_ContentOffset: {x: 0, y: 0}
-    m_FixedWidth: 0
-    m_FixedHeight: 0
-    m_StretchWidth: 1
-    m_StretchHeight: 0
---- !u!114 &228088142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 228088131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cc040b1ff9f3462fa9366edd7f19182, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttons_x_corner: 200
-  btnSkin: {fileID: 0}
-  FrontCameraIcon: {fileID: 2800000, guid: 18bcce4c65c404fe895edc16ac4f42a8, type: 3}
-  FollowCameraIcon: {fileID: 2800000, guid: 02c86aea7032f438385f3537661f0a01, type: 3}
-  MainCameraIcon: {fileID: 2800000, guid: 23f30fe8107de49c89c1db2d710ed3e2, type: 3}
-  follow_camera: {fileID: 304334299}
-  front_camera: {fileID: 492309339}
-  main_camera: {fileID: 1549115924}
-  boxWidth: 265
-  boxHeight: 90
-  boxY: 10
-  buttonWidth: 40
-  buttonHeight: 40
-  buttonY: 40
-  boxLabel: Truck Loader Cameras
-  displayButtons: 1
-  spaceXCornerFromFirst: 55
---- !u!114 &228088143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 228088131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03df64d5a77e84b4f832a67dea12f828, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dashboard: {fileID: 768911565598042905, guid: e9d4139becd844b40b65b4cfca89fcb4,
-    type: 3}
-  dashboardIcon: {fileID: 2800000, guid: afbc86b50d47a478f9d53ffc51a640bb, type: 3}
-  buttons_x_corner: 475
-  buttons_y_corner: 22
-  buttonWidth: 70
-  buttonHeight: 70
-  childrenTag: dashHolder
 --- !u!1 &304334299
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,12 +358,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304334299}
-  m_LocalRotation: {x: 0.97257334, y: 0, z: 0, w: 0.23259674}
-  m_LocalPosition: {x: 0, y: 4.87, z: 11.78}
+  m_LocalRotation: {x: 0.9725733, y: -0, z: -0, w: 0.2325967}
+  m_LocalPosition: {x: 0, y: 4.8700023, z: 11.780003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 228088140}
-  m_RootOrder: 26
+  m_Father: {fileID: 729549277}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 153.1, y: 0, z: 0}
 --- !u!45 &304334301
 Skybox:
@@ -765,12 +606,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492309339}
-  m_LocalRotation: {x: 0, y: 0.814622, z: 0.57999223, w: -0}
-  m_LocalPosition: {x: 0, y: -15.3, z: 4.3}
+  m_LocalRotation: {x: -0, y: 0.81462204, z: 0.5799923, w: 0}
+  m_LocalPosition: {x: 0, y: -15.300006, z: 4.300001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 228088140}
-  m_RootOrder: 25
+  m_Father: {fileID: 729549277}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 250.9, y: 0, z: -180}
 --- !u!45 &492309341
 Skybox:
@@ -986,6 +827,203 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &729549276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 729549277}
+  - component: {fileID: 729549281}
+  - component: {fileID: 729549280}
+  - component: {fileID: 729549279}
+  - component: {fileID: 729549278}
+  m_Layer: 0
+  m_Name: CT660Scripts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &729549277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729549276}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 492309340}
+  - {fileID: 304334300}
+  - {fileID: 1999840391}
+  - {fileID: 1549115925}
+  m_Father: {fileID: 228088140}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &729549278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729549276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03df64d5a77e84b4f832a67dea12f828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashboard: {fileID: 768911565598042905, guid: e9d4139becd844b40b65b4cfca89fcb4,
+    type: 3}
+  dashboardIcon: {fileID: 2800000, guid: afbc86b50d47a478f9d53ffc51a640bb, type: 3}
+  buttons_x_corner: 475
+  buttons_y_corner: 22
+  buttonWidth: 70
+  buttonHeight: 70
+  childrenTag: dashHolder
+--- !u!114 &729549279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729549276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cc040b1ff9f3462fa9366edd7f19182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons_x_corner: 200
+  btnSkin: {fileID: 0}
+  FrontCameraIcon: {fileID: 2800000, guid: 18bcce4c65c404fe895edc16ac4f42a8, type: 3}
+  FollowCameraIcon: {fileID: 2800000, guid: 02c86aea7032f438385f3537661f0a01, type: 3}
+  MainCameraIcon: {fileID: 2800000, guid: 23f30fe8107de49c89c1db2d710ed3e2, type: 3}
+  follow_camera: {fileID: 304334299}
+  front_camera: {fileID: 492309339}
+  main_camera: {fileID: 1549115924}
+  boxWidth: 265
+  boxHeight: 90
+  boxY: 10
+  buttonWidth: 40
+  buttonHeight: 40
+  buttonY: 40
+  boxLabel: Truck Loader Cameras
+  displayButtons: 1
+  spaceXCornerFromFirst: 55
+--- !u!114 &729549280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729549276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1abb39db6c99440148a3a3570d00ae92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windowX: 40
+  windowY: 120
+  windowHeight: 320
+  windowWidth: 150
+  instructionsString: 'Drive: Arrow Keys \n\nBrakes: F, G\n\nDump Loader: Slider\n\nDump
+    Loader near the warehouse'
+  labelString: Dump Truck CT660 Instructions
+  marginVal: 25
+  style:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 0}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+--- !u!114 &729549281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729549276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3367caf1a5740b1bc80e4da0af167a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftFrontWheel: {fileID: 228088133}
+  rightFrontWheel: {fileID: 228088138}
+  leftCenterWheel: {fileID: 228088137}
+  rightCenterWheel: {fileID: 228088136}
+  leftRearWheel: {fileID: 228088135}
+  rightRearWheel: {fileID: 228088134}
+  anglesToTurn: 3
+  engineSoundClip: {fileID: 8300000, guid: a36d30b918914401cbdad53bad4b4e32, type: 3}
+  forwardSpeed: 2
+  caJon: {fileID: 228088139}
+  accelerationDecelerationRate: 0.5
 --- !u!1001 &883013662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1687,7 +1725,7 @@ PrefabInstance:
     - target: {fileID: 8274873701517981592, guid: 7b3293ba46b0d46aa9ac6569be3df610,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8274873701517981592, guid: 7b3293ba46b0d46aa9ac6569be3df610,
         type: 3}
@@ -1704,7 +1742,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1207669506 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 400014, guid: 7b3293ba46b0d46aa9ac6569be3df610,
+  m_CorrespondingSourceObject: {fileID: -7955199872737193836, guid: 7b3293ba46b0d46aa9ac6569be3df610,
     type: 3}
   m_PrefabInstance: {fileID: 1207669504}
   m_PrefabAsset: {fileID: 0}
@@ -1787,7 +1825,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1338150074
 Transform:
   m_ObjectHideFlags: 0
@@ -1795,12 +1833,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338150073}
-  m_LocalRotation: {x: 0.16375636, y: 0, z: 0, w: 0.9865008}
-  m_LocalPosition: {x: 0.12, y: 4.6, z: -11.95}
+  m_LocalRotation: {x: -0.073297024, y: 0.70110685, z: -0.39227748, w: 0.5909275}
+  m_LocalPosition: {x: -12.021956, y: -4.6326637, z: -0.1474495}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1207669506}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 18.85, y: 0, z: 0}
 --- !u!45 &1338150075
 Skybox:
@@ -1981,12 +2019,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549115924}
-  m_LocalRotation: {x: 0.74285275, y: 0, z: 0, w: 0.6694548}
-  m_LocalPosition: {x: 0, y: -5.6, z: 1.7}
+  m_LocalRotation: {x: 0.7428528, y: -0, z: -0, w: 0.6694548}
+  m_LocalPosition: {x: 0, y: -5.5999994, z: 1.7000005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 228088140}
-  m_RootOrder: 27
+  m_Father: {fileID: 729549277}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 95.95, y: 0, z: 0}
 --- !u!81 &1549115926
 AudioListener:
@@ -2284,7 +2322,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 228088140}
+    m_TransformParent: {fileID: 729549277}
     m_Modifications:
     - target: {fileID: 768911564702285674, guid: e9d4139becd844b40b65b4cfca89fcb4,
         type: 3}
@@ -2344,7 +2382,7 @@ PrefabInstance:
     - target: {fileID: 768911565598042904, guid: e9d4139becd844b40b65b4cfca89fcb4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 768911565598042904, guid: e9d4139becd844b40b65b4cfca89fcb4,
         type: 3}
