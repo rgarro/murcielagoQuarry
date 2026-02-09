@@ -12,14 +12,7 @@ using UnityEngine;
  *  Y888   '8'   Y8P   '8'   888Y
  *   '8o          V          o8'
  *     `                     `
- * El Batman de La Cantera del Virilla de Donde se Ve el Puente Negro
- * La locomotora es el motor de un Ferry del Lago Superior
- * El cabus es de pino de Calgary , el cebo escondido en los durmientes de pochote
- * hacia que la mercancia del Clipper tuviera lentitud volcanica
- * mi Coronel Kaddafi esta en MacOnDo, no tenia cebo de Ballena para respirar como el volcan irazu ....
- * Tomas Guardia se fue a Luzon, los filibusteros eran Filipinos japoneses , se gorriaron a juansantamaria 
- * ya murio Miguel Salguero y cayeron todas las casas de Adobe
- *
+ * 
  *
  *
  *
@@ -27,7 +20,7 @@ using UnityEngine;
  */
 public class batComputer : MonoBehaviour
 {
-    private int points
+    private int points;
     // Start is called before the first frame update
     void Start()
     {

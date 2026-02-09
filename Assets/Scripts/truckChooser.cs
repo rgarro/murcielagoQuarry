@@ -36,16 +36,16 @@ public class truckChooser : MonoBehaviour
     public int buttons_x_corner = 150;
 
     public GameObject backHoe;
-public GameObject backHoeCamera;
+//public GameObject backHoeCamera;
 
     public GameObject loader;
-public GameObject loaderCamera;
+//public GameObject loaderCamera;
 
     public GameObject caterpillar;
-public GameObject caterpillarCamera;
+//public GameObject caterpillarCamera;
 
     public GameObject truck;
- public GameObject truckCamera;//la camara anidada en gm scripts no prendia , necesitaba su relay   
+ //public GameObject truckCamera;//la camara anidada en gm scripts no prendia , necesitaba su relay   
 
     public int boxWidth = 265;
     public int boxHeight = 90;
@@ -65,13 +65,13 @@ public GameObject caterpillarCamera;
         this.truck.SetActive(true);//Vagoneta primero
         
         this.backHoe.SetActive(false);
-        this.backHoeCamera.SetActive(false);
+        //this.backHoeCamera.SetActive(false);
 
         this.caterpillar.SetActive(false);
-        this.caterpillarCamera.SetActive(false);
+        //this.caterpillarCamera.SetActive(false);
 
         this.loader.SetActive(false);
-        this.loaderCamera.SetActive(false);      
+        //this.loaderCamera.SetActive(false);      
     }
 
     // Update is called once per frame
@@ -99,14 +99,17 @@ public GameObject caterpillarCamera;
         //boton Caterpillar 
         if(GUI.Button(new Rect(this.buttons_x_corner+this.spaceXCornerFromFirst+55,this.buttonY,this.buttonWidth,this.buttonHeight), this.caterpillarIcon)){
             if(!this.caterpillar_is_on){
+                Debug.Log("start activating cat");
+                this.caterpillar.SetActive(true);//caterpillar
                 this.truck.SetActive(false);
                 this.backHoe.SetActive(false);
-                this.caterpillar.SetActive(true);//caterpillar
+                
                 this.loader.SetActive(false);
                 this.truck_is_on = false;
                 this.loader_is_on = false;
                 this.backHoe_is_on = false;
                 this.caterpillar_is_on = true;   
+                Debug.Log("end deactivating cat");
             }
         }
         //boto loader
