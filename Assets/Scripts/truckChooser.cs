@@ -9,6 +9,7 @@ using UnityEngine;
  *      _/oo OOOOO oo`  ooo   ooo   o^o       o^o   o^o     o^o
  *   -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
  *  Button Navigator Allowing to swap among 4 vehicles
+ * and starts its main cameras
  * 
  *
  *
@@ -35,9 +36,16 @@ public class truckChooser : MonoBehaviour
     public int buttons_x_corner = 150;
 
     public GameObject backHoe;
+public GameObject backHoeCamera;
+
     public GameObject loader;
+public GameObject loaderCamera;
+
     public GameObject caterpillar;
+public GameObject caterpillarCamera;
+
     public GameObject truck;
+ public GameObject truckCamera;//la camara anidada en gm scripts no prendia , necesitaba su relay   
 
     public int boxWidth = 265;
     public int boxHeight = 90;
@@ -55,9 +63,15 @@ public class truckChooser : MonoBehaviour
     void Start()
     {
         this.truck.SetActive(true);//Vagoneta primero
+        
         this.backHoe.SetActive(false);
+        this.backHoeCamera.SetActive(false);
+
         this.caterpillar.SetActive(false);
-        this.loader.SetActive(false);      
+        this.caterpillarCamera.SetActive(false);
+
+        this.loader.SetActive(false);
+        this.loaderCamera.SetActive(false);      
     }
 
     // Update is called once per frame
