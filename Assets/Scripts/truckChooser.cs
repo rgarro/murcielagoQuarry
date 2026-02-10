@@ -8,9 +8,9 @@ using UnityEngine;
  *      >(________|__|_[_________]_|____|_/\_|___|_|___________|_|
  *      _/oo OOOOO oo`  ooo   ooo   o^o       o^o   o^o     o^o
  *   -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
- *  Button Navigator Allowing to swap among 4 vehicles
- * and starts its main cameras
- * 
+ *  Button Navigator Allowing to swap among 4 scripted vehicles
+ * and starts its main cameras activate scripts ansd deactivate scripts on others
+ * to keep only current one working with their colliders and rigidbodies activated
  *
  *
  * @author Rolando<rgarro@gmail.com> <https://emptyart.github.io>
