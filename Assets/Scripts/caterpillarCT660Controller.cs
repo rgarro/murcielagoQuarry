@@ -12,11 +12,11 @@ using UnityEngine;
  *      /_,-/ ,-. \ `._____|__________||/ ,-. \ \_[
  *          /\ `-' /                    /\ `-' /
  *            `---'                       `---'         
- *            Caterpillar CT660 Controller with cabin view , follow and front cameras
- *      Torque push style engine , so it has the same risk of overturn on difficult surface
- * or wheel colliders turning
- *         rotates loader and tranlates loads
- * inspired from An ECU from 1995 with 32 kb from the land of OBDI 
+ *  Caterpillar CT660 Controller with cabin view , follow and front cameras
+ *  Torque push style engine , so it has the same risk of overturn on difficult surface
+ *      or wheel colliders turning
+ *   rotates loader and tranlates loads
+ *  inspired from An ECU from 1995 with 32 kb from the land of OBDI 
  *
  *
  * @author Rolando<rgarro@gmail.com> <https://emptyart.github.io>
@@ -91,6 +91,7 @@ public class caterpillarCT660Controller : MonoBehaviour
     void moveForward(){
         this.playEngineSoundOn();
         if(!this.isBrake){
+            Debug.Log("moving forward");
             this.rotateWheelsForward();
             this.transform.Translate(Vector3.forward * this.forwardSpeed * Time.deltaTime);
         }

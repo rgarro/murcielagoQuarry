@@ -86,7 +86,7 @@ public class truckChooser : MonoBehaviour
         //boton Caterpillar 
         if(GUI.Button(new Rect(this.buttons_x_corner+this.spaceXCornerFromFirst+55,this.buttonY,this.buttonWidth,this.buttonHeight), this.caterpillarIcon)){
             if(!this.caterpillar_is_on){
-                Debug.Log("start activating cat");
+                //Debug.Log("start activating cat");
                 this.caterpillar.SetActive(true);//caterpillar
                 this.truck.SetActive(false);
                 this.backHoe.SetActive(false);
@@ -96,7 +96,7 @@ public class truckChooser : MonoBehaviour
                 this.loader_is_on = false;
                 this.backHoe_is_on = false;
                 this.caterpillar_is_on = true;   
-                Debug.Log("end deactivating cat");
+                //Debug.Log("end deactivating cat");
             }
         }
         //boto loader
