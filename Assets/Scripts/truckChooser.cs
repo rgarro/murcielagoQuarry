@@ -49,12 +49,13 @@ public class truckChooser : MonoBehaviour
     public string boxLabel = "Truck Chooser";
     public int spaceXCornerFromFirst = 55;
 
-
+    private flashText updateText;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        this.updateText = GameObject.FindWithTag("batcomputer").GetComponent<flashText>();
         this.truck.SetActive(true);//Vagoneta primero
         this.backHoe.SetActive(false);
         this.caterpillar.SetActive(false);
@@ -80,7 +81,8 @@ public class truckChooser : MonoBehaviour
                 this.truck_is_on = true;
                 this.loader_is_on = false;
                 this.backHoe_is_on = false;
-                this.caterpillar_is_on = false;   
+                this.caterpillar_is_on = false;  
+                this.updateText.setFlashMsg("Caterpillar CT660"); 
             }
         }
         //boton Caterpillar 
@@ -97,6 +99,7 @@ public class truckChooser : MonoBehaviour
                 this.backHoe_is_on = false;
                 this.caterpillar_is_on = true;   
                 //Debug.Log("end deactivating cat");
+                this.updateText.setFlashMsg("Caterpillar D7R"); 
             }
         }
         //boto loader
@@ -109,7 +112,8 @@ public class truckChooser : MonoBehaviour
                 this.truck_is_on = false;
                 this.loader_is_on = true;//loader
                 this.backHoe_is_on = false;
-                this.caterpillar_is_on = true;   
+                this.caterpillar_is_on = true;
+                this.updateText.setFlashMsg("Liebherr L538");   
             }
         }
         //boton backhoe
@@ -122,7 +126,8 @@ public class truckChooser : MonoBehaviour
                 this.truck_is_on = false;
                 this.loader_is_on = false;
                 this.backHoe_is_on = false;//backhoe
-                this.caterpillar_is_on = true;   
+                this.caterpillar_is_on = true; 
+                this.updateText.setFlashMsg("Backhoe JCB 2014");    
             }
         }
     }

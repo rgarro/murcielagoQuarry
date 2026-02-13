@@ -9,6 +9,7 @@ TagManager:
   - speedNeedle
   - dashHolder
   - caterpillarCamera
+  - batcomputer
   layers:
   - Default
   - TransparentFX
