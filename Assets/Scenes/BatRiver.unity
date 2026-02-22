@@ -319,7 +319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 75f084e0f070e48f09d391892fae8161, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 75f084e0f070e48f09d391892fae8161, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1898,7 +1898,7 @@ PrefabInstance:
     - target: {fileID: 8274873701517981592, guid: 7b3293ba46b0d46aa9ac6569be3df610,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8274873701517981592, guid: 7b3293ba46b0d46aa9ac6569be3df610,
         type: 3}
@@ -1931,7 +1931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cdc5d1ef658b40919681653945b7151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttons_x_corner: 200
+  buttons_x_corner: 233
   btnSkin: {fileID: 0}
   GunCamera2d: {fileID: 0}
   FollowIcon: {fileID: 0}
