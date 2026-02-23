@@ -1933,17 +1933,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttons_x_corner: 233
   btnSkin: {fileID: 0}
-  GunCamera2d: {fileID: 0}
-  FollowIcon: {fileID: 0}
-  gun_camera: {fileID: 0}
-  follow_camera: {fileID: 0}
+  GunCamera2d: {fileID: 2800000, guid: a37012073cf794159a87210e4a7a63ab, type: 3}
+  FollowIcon: {fileID: 2800000, guid: 3dbf7f25ed6a845fa8d762331a918214, type: 3}
+  gun_camera: {fileID: 1338150073}
+  follow_camera: {fileID: 1169226608}
   boxWidth: 265
   boxHeight: 90
   boxY: 10
   buttonWidth: 40
   buttonHeight: 40
   buttonY: 40
-  boxLabel: Cameras
+  boxLabel: BullDozer Cameras
   displayButtons: 1
   spaceXCornerFromFirst: 55
 --- !u!1001 &1292216269
