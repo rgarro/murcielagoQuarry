@@ -864,8 +864,9 @@ GameObject:
   - component: {fileID: 621803227}
   - component: {fileID: 621803229}
   - component: {fileID: 621803228}
+  - component: {fileID: 621803230}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: FollowCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -936,6 +937,22 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &621803230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621803226}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61682be5314d0440b9e67529196ac1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  naturalFrequency: 10
+  dampingRatio: 0.8
+  forceShift: 0.03
+  setSuspensionDistance: 1
 --- !u!1 &729549276
 GameObject:
   m_ObjectHideFlags: 0
@@ -2442,6 +2459,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1939111083}
+  - component: {fileID: 1939111086}
+  - component: {fileID: 1939111085}
+  - component: {fileID: 1939111084}
   m_Layer: 0
   m_Name: Liebherr538Scripts
   m_TagString: Untagged
@@ -2464,31 +2484,56 @@ Transform:
   m_Father: {fileID: 325991548}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1992914507
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1992914511}
-  - component: {fileID: 1992914509}
-  - component: {fileID: 1992914508}
-  m_Layer: 0
-  m_Name: liebHerr
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1992914508
+--- !u!114 &1939111084
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1992914507}
+  m_GameObject: {fileID: 1939111082}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61682be5314d0440b9e67529196ac1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  naturalFrequency: 10
+  dampingRatio: 0.8
+  forceShift: 0.03
+  setSuspensionDistance: 1
+--- !u!114 &1939111085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939111082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cdc5d1ef658b40919681653945b7151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons_x_corner: 200
+  btnSkin: {fileID: 0}
+  GunCamera2d: {fileID: 0}
+  FollowIcon: {fileID: 0}
+  gun_camera: {fileID: 0}
+  follow_camera: {fileID: 0}
+  boxWidth: 265
+  boxHeight: 90
+  boxY: 10
+  buttonWidth: 40
+  buttonHeight: 40
+  buttonY: 40
+  boxLabel: Cameras
+  displayButtons: 1
+  spaceXCornerFromFirst: 55
+--- !u!114 &1939111086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939111082}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36ed7128051760b42bc56c15e5a6657d, type: 3}
@@ -2502,22 +2547,22 @@ MonoBehaviour:
   stepsBelow: 5
   stepsAbove: 1
   driveType: 0
---- !u!114 &1992914509
-MonoBehaviour:
+--- !u!1 &1992914507
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1992914507}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61682be5314d0440b9e67529196ac1a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  naturalFrequency: 10
-  dampingRatio: 0.8
-  forceShift: 0.03
-  setSuspensionDistance: 1
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1992914511}
+  m_Layer: 0
+  m_Name: liebHerr
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &1992914511
 Transform:
   m_ObjectHideFlags: 0
