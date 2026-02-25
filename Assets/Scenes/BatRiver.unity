@@ -319,7 +319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 75f084e0f070e48f09d391892fae8161, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 75f084e0f070e48f09d391892fae8161, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1150,6 +1150,106 @@ MonoBehaviour:
   forwardSpeed: 2
   caJon: {fileID: 228088139}
   accelerationDecelerationRate: 0.5
+--- !u!1 &820370379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 820370380}
+  - component: {fileID: 820370383}
+  - component: {fileID: 820370382}
+  - component: {fileID: 820370381}
+  m_Layer: 0
+  m_Name: 'liebherFrontCamera '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &820370380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820370379}
+  m_LocalRotation: {x: 0.107857905, y: -0.84423304, z: -0.5248286, w: 0.01386678}
+  m_LocalPosition: {x: 6.3, y: -38.6, z: 22.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1939111083}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 242.026, y: 16.93399, z: 155.211}
+--- !u!114 &820370381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820370379}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61682be5314d0440b9e67529196ac1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  naturalFrequency: 10
+  dampingRatio: 0.8
+  forceShift: 0.03
+  setSuspensionDistance: 1
+--- !u!81 &820370382
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820370379}
+  m_Enabled: 1
+--- !u!20 &820370383
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820370379}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.01
+  far clip plane: 172.8
+  field of view: 36
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1001 &883013662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2468,7 +2568,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1939111083
 Transform:
   m_ObjectHideFlags: 0
@@ -2481,6 +2581,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 621803227}
+  - {fileID: 820370380}
   m_Father: {fileID: 325991548}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2514,17 +2615,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttons_x_corner: 200
   btnSkin: {fileID: 0}
-  GunCamera2d: {fileID: 0}
-  FollowIcon: {fileID: 0}
-  gun_camera: {fileID: 0}
-  follow_camera: {fileID: 0}
+  GunCamera2d: {fileID: 2800000, guid: f1d790b1546ae417b91ee61d36445a50, type: 3}
+  FollowIcon: {fileID: 2800000, guid: 43ca6fbc2888d49c291fa517b3d35a50, type: 3}
+  gun_camera: {fileID: 820370379}
+  follow_camera: {fileID: 621803226}
   boxWidth: 265
   boxHeight: 90
   boxY: 10
   buttonWidth: 40
   buttonHeight: 40
   buttonY: 40
-  boxLabel: Cameras
+  boxLabel: Liebher RL538 Cameras
   displayButtons: 1
   spaceXCornerFromFirst: 55
 --- !u!114 &1939111086
