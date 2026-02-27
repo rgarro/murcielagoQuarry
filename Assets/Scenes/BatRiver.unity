@@ -2621,15 +2621,15 @@ MonoBehaviour:
   FollowIcon: {fileID: 2800000, guid: 43ca6fbc2888d49c291fa517b3d35a50, type: 3}
   gun_camera: {fileID: 820370379}
   follow_camera: {fileID: 621803226}
-  boxWidth: 265
+  boxWidth: 165
   boxHeight: 90
   boxY: 10
-  buttonWidth: 40
-  buttonHeight: 40
+  buttonWidth: 50
+  buttonHeight: 50
   buttonY: 40
   boxLabel: Liebher RL538 Cameras
   displayButtons: 1
-  spaceXCornerFromFirst: 55
+  spaceXCornerFromFirst: 30
 --- !u!114 &1939111086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2886,19 +2886,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cdc5d1ef658b40919681653945b7151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttons_x_corner: 200
+  buttons_x_corner: 219
   box_x_corner: 200
   btnSkin: {fileID: 0}
   GunCamera2d: {fileID: 2800000, guid: 3f9feb54c167b4950b4a8c0f47b6ae97, type: 3}
   FollowIcon: {fileID: 2800000, guid: 013020cbd7f4942ccb2458667cb02da2, type: 3}
   gun_camera: {fileID: 122364253}
   follow_camera: {fileID: 1624094122}
-  boxWidth: 233
-  boxHeight: 90
+  boxWidth: 150
+  boxHeight: 70
   boxY: 10
-  buttonWidth: 60
-  buttonHeight: 60
+  buttonWidth: 40
+  buttonHeight: 40
   buttonY: 33
   boxLabel: BackHoe Cameras
   displayButtons: 1
-  spaceXCornerFromFirst: 128
+  spaceXCornerFromFirst: 11
