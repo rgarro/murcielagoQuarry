@@ -1,5 +1,22 @@
 ﻿using UnityEngine;
-
+/**
+ *         __-------__
+ *       / _---------_ \
+ *      / /           \ \
+ *      | |           | |
+ *      |_|___________|_|
+ *  /-\|                 |/-\
+ * | _ |\       0       /| _ |
+ * |(_)| \      !      / |(_)|
+ * |___|__\_____!_____/__|___|
+ * [_________|TCH-2|_________] 
+ *  ||||    ~~~~~~~~     ||||
+ *  `--'                 `--'
+ * In the city of fallen angels where the ocean meets the sand ...
+ *
+ *
+ *@author Rolando<rgarro@gmail.com> <https://emptyart.github.io>
+ */
 [ExecuteInEditMode]
 public class EasySuspension : MonoBehaviour
 {
