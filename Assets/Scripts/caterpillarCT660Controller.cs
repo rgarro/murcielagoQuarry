@@ -12,10 +12,8 @@ using UnityEngine;
  *      /_,-/ ,-. \ `._____|__________||/ ,-. \ \_[
  *          /\ `-' /                    /\ `-' /
  *            `---'                       `---'         
- *  Caterpillar CT660 Controller with cabin view , follow and front cameras
- *  Torque push style engine , so it has the same risk of overturn on difficult surface
- *      or wheel colliders turning
- *   rotates loader and tranlates loads
+ *  Caterpillar CT660 Controller with cabin view , 
+ * rotates wheeldrive , hovercraft style arroy key pusher
  *  inspired from An ECU from 1995 with 32 kb from the land of OBDI 
  *
  *
@@ -24,12 +22,12 @@ using UnityEngine;
 public class caterpillarCT660Controller : MonoBehaviour
 {
 
-    public GameObject leftFrontWheel;
-    public GameObject rightFrontWheel;
-    public GameObject leftCenterWheel;
-    public GameObject rightCenterWheel;
-    public GameObject leftRearWheel;
-    public GameObject rightRearWheel;
+    //public GameObject leftFrontWheel;
+    //public GameObject rightFrontWheel;
+    //public GameObject leftCenterWheel;
+    //public GameObject rightCenterWheel;
+    //public GameObject leftRearWheel;
+    //public GameObject rightRearWheel;
 
     public float anglesToTurn = 3.00f;
 
@@ -92,7 +90,7 @@ public class caterpillarCT660Controller : MonoBehaviour
         this.playEngineSoundOn();
         if(!this.isBrake){
             Debug.Log("moving forward");
-            this.rotateWheelsForward();
+            //this.rotateWheelsForward();
             this.transform.Translate(Vector3.forward * this.forwardSpeed * Time.deltaTime);
         }
     }
@@ -116,9 +114,9 @@ public class caterpillarCT660Controller : MonoBehaviour
     }
 
     void rotateWheelsForward(){
-        Vector3 rotationDirection = Vector3.forward;
-        this.leftFrontWheel.transform.Rotate(rotationDirection * this.forwardSpeed * Time.deltaTime);
-        this.rightFrontWheel.transform.Rotate(rotationDirection * this.forwardSpeed * Time.deltaTime);
+        //Vector3 rotationDirection = Vector3.forward;
+        //this.leftFrontWheel.transform.Rotate(rotationDirection * this.forwardSpeed * Time.deltaTime);
+        //this.rightFrontWheel.transform.Rotate(rotationDirection * this.forwardSpeed * Time.deltaTime);
     }
 
     void rotateWheelsBackward(){
