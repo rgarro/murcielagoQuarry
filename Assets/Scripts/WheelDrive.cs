@@ -21,7 +21,7 @@ using System;
  *       |\\~//|_~~~~~~~~~'~~~.___/~~~~~_|\\~//|
  *       |\\~//|                         |\\~//|
  *       |_\_/_|                         |_\_/_|
- * DIGA NO AL ISLAM , DIGA NO A LOS TESTIGOS DE JEOVA 
+ * Basic Arrow Pusher for rigid bodies with wheels colliders
  *
  *@author Rolando<rgarro@gmail.com> <https://emptyart.github.io>
  */
